@@ -1,0 +1,188 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #d1d1d1;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    font-size: 5em;
+    font-family: monospace;
+}
+
+input[type="text"] {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 400px) {
+    #result {
+        width: 80%;
+        max-width: 1200px;
+        margin-top: 20px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        text-align: center;
+    }
+}
+
+#result > div {
+    background-color: rgb(239, 239, 239);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.mxene-type {
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    outline: 1px solid rgb(0, 0, 0);
+    font-weight: bold;
+    width: 100%;
+    align-self: center;
+    box-sizing: border-box;
+
+    max-width:705px;
+    /* margin: 0; */
+}
+
+
+/* New styles for flex container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flex-container .label-box,
+.flex-container .result-box {
+    flex: 1; /* Let both label and result boxes take up equal space */
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0px 0;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+
+.flex-container .label-box {
+    background-color: #d2d2d2;
+    outline: 1px solid rgb(0, 0, 0);
+    font-weight: bold;
+    /* width: 70px; */
+}
+
+.flex-container .result-box {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+.flex-container .outer-box {
+    margin: 0;
+    display: flex;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 8px;
+    border-left: transparent;
+
+    flex: 1 1 45%; /* Ensure each element takes up half of the container */
+    white-space: nowrap;
+    /* max-width: 49%;
+    /* display: flex; */
+    /* flex-direction: left; */
+    /* align-items: center; */
+}
+
+
+#result h2 {
+    color: #066ad6;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#result p {
+    color: black;
+}
+
+#result a {
+    color: #007BFF;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result a:hover {
+    text-decoration: underline;
+}
+
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background: #b7b7b7;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+
+  #result .not-found {
+    color: grey;
+  }
