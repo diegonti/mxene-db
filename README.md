@@ -1,6 +1,6 @@
 <h1><span style="color: rgb(144, 144, 144);">M</span><span style="color: rgb(97, 131, 216);">X</span>enes Database</h1>
 
-This repository contains the necessary files for the online [MXenes Database](https://diegonti.github.io/MXenes-DB).
+This repository contains the necessary files for the online [MXenes Database](https://diegonti.github.io/MXene-DB).
 
 The database was created based on the results obtained after a comprehensive computational screening of over 4,000 MXene structures, published in [*Energy Environ. Mater.* 2024, e12774](https://doi.org/10.1002/eem2.12774).
 
