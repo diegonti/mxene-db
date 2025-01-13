@@ -22,7 +22,10 @@ function searchMXene() {
             const mxeneDiv = document.createElement('div');
             let mxeneType = mxene.IsGap === 0 ? "Metallic" : "Semiconductor";
             let mxene_sub_name = mxene.name.replace(/\d+/g, match => `<sub>${match}</sub>`);
-            let hollow_sub = mxene.hollow_label.replace(/[MX]/g, match => `<sub>${match}</sub>`);
+            let hollow_sub = mxene.hollow_label === null ? "" : mxene.hollow_label.replace(/[MX]/g, match => `<sub>${match}</sub>`);
+            let download_path = mxene.hollow_label === null ? `contcars/pristine/searcher_${mxene.n}_p/${mxene.stack_label}/CONTCAR_${mxene.name}` : `contcars/terminated/searcher_${mxene.n}_${mxene.T_label}/${mxene.stack_label}_${mxene.hollow_label}/CONTCAR_${mxene.name}`
+            let download_name = mxene.hollow_label === null ? `CONTCAR_${mxene.name}_${mxene.stack_label}` : `CONTCAR_${mxene.name}_${mxene.stack_label}_${mxene.hollow_label}`
+            // <a href="contcars/terminated/searcher_${mxene.n}_${mxene.T_label}/${mxene.stack_label}_${mxene.hollow_label}/CONTCAR_${mxene.name}" download="CONTCAR_${mxene.name}_${mxene.stack_label}_${mxene.hollow_label}">Download CONTCAR</a>
 
             mxeneDiv.innerHTML = `
                 <h2>${mxene_sub_name} ${mxene.stack_label} ${hollow_sub}</h2>
@@ -54,7 +57,7 @@ function searchMXene() {
                 </div>
 
                 <br>
-                <a href="contcars/terminated/searcher_${mxene.n}_${mxene.T_label}/${mxene.stack_label}_${mxene.hollow_label}/CONTCAR_${mxene.name}" download="CONTCAR_${mxene.name}_${mxene.stack_label}_${mxene.hollow_label}">Download CONTCAR</a>
+                <a href="${download_path}" download="${download_name}">Download CONTCAR</a>
                 
                 <hr>
             `;
