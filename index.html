@@ -9,13 +9,71 @@
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
     
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
     <h1><span style="color: rgb(144, 144, 144);">M</span><span style="color: rgb(97, 131, 216);">X</span>enes Database</h1>
-    <input type="text" id="searchInput" placeholder="Enter MXene (e.g. Zr2CO2 or Zr2CO2_ABC_HM)" onkeypress="searchOnEnter(event)">    
-    <button onclick="searchMXene()">Search</button>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Enter MXene (e.g. Zr2CO2 or Zr2CO2_ABC_HM)" onkeypress="searchOnEnter(event)">
+        <button id="toggleFilterBtn" onclick="toggleFilters()" title="Toggle Filters"> <i id="filterIcon" class="fas fa-filter"></i></button>
+        <button id="searchBtn" onclick="searchMXene()"><i id="searchIcon" title="Search" class="fas fa-search"></i></button>
+    </div>
+    
+
+    <div id="filterContainer">
+     
+        <div class="filter-item">
+          <label for="filter_M">M:</label>
+          <select id="filter_M" onchange="searchMXene()">
+            <option value="">All M</option>
+          </select>
+        </div>
+      
+        <div class="filter-item">
+          <label for="filter_X">X:</label>
+          <select id="filter_X" onchange="searchMXene()">
+            <option value="">All X</option>
+          </select>
+        </div>
+      
+        <div class="filter-item">
+          <label for="filter_T">T:</label>
+          <select id="filter_T" onchange="searchMXene()">
+            <option value="">All T</option>
+          </select>
+        </div>
+
+        <div class="filter-item">
+            <label for="filter_n">n:</label>
+            <select id="filter_n" onchange="searchMXene()">
+              <option value="">All n</option>
+            </select>
+          </div>
+      
+        <div class="filter-item">
+          <label for="filter_stack">Stacking:</label>
+          <select id="filter_stack" onchange="searchMXene()">
+            <option value="">All Stacks</option>
+          </select>
+        </div>
+      
+        <div class="filter-item">
+          <label for="filter_hollow">Hollow:</label>
+          <select id="filter_hollow" onchange="searchMXene()">
+            <option value="">All Hollows</option>
+          </select>
+        </div>
+      </div>
+      
+      
+      
+
+
     <div id="result"></div>
+
+
 
     <script src="script.js"></script>
 </body>
