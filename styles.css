@@ -13,12 +13,37 @@ body {
 h1 {
     color: #d1d1d1;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 10px;
 
     font-size: 5em;
     font-family: monospace;
 }
+
+/*About section*/
+
+.top-right-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.top-right-link a {
+  color: #ccc;
+  text-decoration: none;
+  background-color: #222;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.top-right-link a:hover {
+  background-color: #444;
+}
+
 
 /* Search container styles */
 
