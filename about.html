@@ -20,8 +20,8 @@
             font-size: 1.5rem; /* fixed readable size */
             word-wrap: break-word; /* ensures text wraps nicely */
             display: flex;
-            overflow-x: auto;
             text-align: left;
+            display: flex;
         }
 
         h1 {
@@ -56,12 +56,15 @@
             position: absolute;
             top: 20px;
             right: 20px;
+            z-index: 10;
+
         }
 
         .back-link a {
             color: #ccc;
             background-color: #222;
             padding: 8px 12px;
+            margin: 10px;
             border-radius: 6px;
             font-family: monospace;
             font-size: 1rem;
