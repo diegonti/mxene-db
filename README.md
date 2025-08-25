@@ -6,9 +6,9 @@ The database was created based on the results obtained after a comprehensive com
 
 On the website, you can easily search for various MXene structures and retrieve essential information such as lattice parameters, widths, bandgap information, and even download the optimized CONTCAR file.
 
-We used this database to develop Machine Learning models to predict MXene bandgaps, which you can check out in the [MXgap](https://github.com/diegonti/mxgap) program (paper incoming).
+We used this database to develop Machine Learning models to predict MXene bandgaps, which you can check out in the [MXgap](https://github.com/diegonti/mxgap) program ([paper in ACS Catalysis](https://doi.org/10.1021/acscatal.5c04191)).
 
-Keep in mind that this is database is a smaller version of the full one used to train the MXgap models, just to make the web. The full official database can be found at [https://doi.org/10.5281/zenodo.14858915](https://doi.org/10.5281/zenodo.14858915).
+Keep in mind that this is database is a smaller version of the full one used to train the MXgap models, just to make the web. The full official database can be found at [https://doi.org/10.5281/zenodo.14858915](https://doi.org/10.5281/zenodo.14858915), and can be cited though the article published: [*ACS Catal.* 2025, **15**, 14403-14413](https://doi.org/10.1021/acscatal.5c04191).
 
 You can contact [me](mailto:diegonti.doc@gmail.com) for more information. 
 
