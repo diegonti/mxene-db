@@ -10,12 +10,13 @@ fetch('database.json')
 
 
 function searchMXene() {
-    const query = document.getElementById('searchInput').value.toLowerCase();
+    let query = document.getElementById('searchInput').value.toLowerCase();
 
     let matchingMxenes;
 
     if (query) {
         // Search by name if query is present
+        query = query.trim()
         matchingMxenes = database.filter(m =>
             m.full_name.toLowerCase() === query || m.name.toLowerCase() === query
         );
