@@ -34,13 +34,16 @@
 
         p {
             text-align: justify;
-            margin-bottom: 1.5em;
+            margin-bottom: 1em;
             /* font-size: 1rem; */
         }
 
         @media (max-width: 768px) {
             p {
             font-size: 1rem;
+            }
+            pre {
+                font-size: 1rem;
             }
         }
 
@@ -82,6 +85,14 @@
         .back-link a:hover {
             background-color: #444;
         }
+    pre {
+        background-color: #22222293;
+        padding: 10px;
+        margin: 1rem;
+        max-width: 95%;
+        overflow-x: auto;
+    }
+
     </style>
 </head>
 <body>
@@ -97,23 +108,21 @@
 
 
     <p>
-        The database was created based on the results obtained after a comprehensive computational screening of over 4000 MXene structures, published in 
+        This database was created based on the results obtained after a comprehensive computational screening of over 4000 MXene structures, published in 
         <a href="https://doi.org/10.1002/eem2.12774" target="_blank"><em>Energy Environ. Mater.</em> 2024, <strong>7</strong>, e12774</a> and 
         <a href="https://doi.org/10.1039/D3TA01933K" target="_blank"><em>J. Mater. Chem. A</em> 2023, <strong>11</strong>, 13754-13764</a>.
+        It has been used to develop the <a href="https://github.com/diegonti/mxgap">MXgap</a> program, a Machine Learning tool to predict MXene bandgaps.
+        The database is oficially published in <a href="https://doi.org/10.1021/acscatal.5c04191" target="_blank"><em>ACS Catal.</em> 2025, <strong> 15</strong>, 14403-14413</a>. So, if you use this database, please cite:
     </p>
+    <pre>D. Ontiveros, S. Vela, F. Viñes, C. Sousa, ACS Catal., 2025, 15, 14403-14413. DOI: 10.1021/acscatal.5c04191</pre>
 
     <p>
         On the website, you can easily search for various MXene structures and retrieve essential information such as lattice parameters, widths, bandgap information, and even download the optimized CONTCAR file.
     </p>
-
-    <p>
-        We used this database to develop Machine Learning models to predict MXene bandgaps, which you can check out in the <a href="https://github.com/diegonti/mxgap" target="_blank">MXgap</a> program (see also our <a href="https://doi.org/10.1021/acscatal.5c04191" target="_blank">ACS Catalysis paper</a>).
-    </p>
-
     <p>
         Keep in mind that this is a smaller version of the full one used to train the MXgap models, just to make the web. The full official database can be found at 
         <a href="https://doi.org/10.5281/zenodo.14858915" target="_blank">https://doi.org/10.5281/zenodo.14858915</a>, and can be cited through the corresponding publication:
-        <a href="https://doi.org/10.1021/acscatal.5c04191" target="_blank"><em>ACS Catal.</em> 2025, <strong> 15</strong>, 14403-14413.</a>
+        <a href="https://doi.org/10.1021/acscatal.5c04191" target="_blank"><em>ACS Catal.</em> 2025, <strong> 15</strong>, 14403-14413</a>.
 
     </p>
 
